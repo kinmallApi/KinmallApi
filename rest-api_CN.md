@@ -53,6 +53,49 @@ lo | lowestPrice | String | 最低价
 la | lastPrice | String | 最新价
 a | amount | String | 成交额
 
+
+# 市场列表API
+
+
+
+# 接口说明
+名称 | 说明
+------------ | ------------
+说明 | 获取平台所有市场数据
+域名 | https://www.kinmall.co
+路径 | /api/markets/all
+请求方式 | GET
+请求参数格式 | -
+参数例子 | -
+返回数据 | {"items":[{"i":1,"bci":1,"sci":17,"tp":"BTC/USDT","ca":"2019-06-12T09:29:12Z","ds":true,<br>"ei":1,"oa":null,"s":"running","tai": 2,"tr":"0.00200"}]}
+请求错误信息格式 | {"status":http status,"message":"describe status info"}
+错误信息例子 | {"status":404,"message":"request not found"}
+
+
+# 请求参数说明
+
+无
+
+# 返回数据说明
+
+名称 | 全称 | 类型 | 备注
+------------ | ------------ | ------------| ------------
+bci | buyerCoinId | Long | 买方币种ID
+ca | closedAt | String | 关闭时间
+ds | deepSharing | Boolean | 是否深度共享
+ei | amount | Long | 交易所ID
+i | volume | Long | 市场ID(marketId)
+oa | changePct | string | 开放时间
+s | marketId | String | 市场状态
+sci | exchangeId | Long | 卖方币种ID
+tai | period | Long | 撮合引擎ID
+tp | startTime | String | 交易对
+tr | endTime | String | 交易手续费
+
+s 字段为 "running" 时,市场为有效市场
+
+
+
 # Market_id 对照表
 
 
