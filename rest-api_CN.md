@@ -4,6 +4,48 @@
 * 响应中如有数组，数组元素以时间升序排列，越早的数据越提前。
 * 所有时间戳均为UNIX时间，单位为毫秒
 
+# 主平台行情 API
+
+
+
+# 接口说明
+
+名称 | 说明
+------------ | ------------
+说明 | 根据市场id和统计时间周期查询市场行情
+域名 | https://quotation.d1.kinmall.lan
+路径 | /feixiaohao/mqe
+请求方式 | GET
+请求参数格式 | 无
+参数例子 | 无
+返回数据 | ["ticker":[{"symbol":"USDT/KM","h":6432.8763456,"lo":6324.56789765,"a":2134565.3456752,"cp":0.3636,"v":342.345678,"mId":100,<br>"eId":100,"p":"24h"},eId:1]
+请求错误信息格式 | {"status":http status,"message":"describe status info"}
+错误信息例子 | {"status":404,"message":"market quotation not found"}
+
+
+# 请求参数说明
+
+无
+
+
+# 返回数据说明
+
+名称 | 全称 | 类型 | 备注
+------------ | ------------ | ------------| ------------
+ticker | ticker | Array | 行情
+eId | exchangeId | string | 交易所id
+mId | marketId | Long | 市场id
+h | highestPrice | string | 最高价
+lo | lowestPrice | String | 最低价
+la | lastPrice | String | 最新价
+v | volume | String | 成交量
+a | amount | String | 成交额
+p | period | String | 统计周期
+cp | changePct | string | 涨跌幅
+mId | marketId | Long | 市场id
+
+
+
 
 # 市场行情 API
 
