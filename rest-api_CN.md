@@ -18,7 +18,7 @@
 请求方式 | GET
 请求参数格式 | 无
 参数例子 | 无
-返回数据 | ["ticker":[{"symbol":"USDT/KM","h":6432.8763456,"lo":6324.56789765,"a":2134565.3456752,"cp":0.3636,"v":342.345678,"mId":100,<br>"eId":100,"p":"24h"},eId:1]
+返回数据 | ["ticker":[{"symbol":"USDT/KM","h":6432.8763456,"lo":6324.56789765,"a":2134565.3456752,<br>"cp":0.3636,"v":342.345678,"mId":100,"eId":100,"p":"24h"},eId:1]
 请求错误信息格式 | {"status":http status,"message":"describe status info"}
 错误信息例子 | {"status":404,"message":"market quotation not found"}
 
