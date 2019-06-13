@@ -13,7 +13,7 @@
 名称 | 说明
 ------------ | ------------
 说明 | 根据市场id和统计时间周期查询市场行情
-域名 | https://quotation.d1.kinmall.lan
+域名 | https://quotation.kinmall.co
 路径 | /feixiaohao/mqe
 请求方式 | GET
 请求参数格式 | 无
